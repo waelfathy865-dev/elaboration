@@ -1,0 +1,38 @@
+{
+  "name": "school-pulse",
+  "version": "1.0.0",
+  "description": "School Pulse - منصة نبض المدارس - حكومية متقدمة لإدارة التواصل بين مديري المدارس والإدارة العامة",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "start": "npm start --prefix backend",
+    "test": "concurrently \"npm run test --prefix frontend\" \"npm run test --prefix backend\"",
+    "lint": "concurrently \"npm run lint --prefix frontend\" \"npm run lint --prefix backend\""
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "keywords": [
+    "school",
+    "education",
+    "management",
+    "dashboard",
+    "government",
+    "arabic",
+    "rtl",
+    "reports",
+    "statistics"
+  ],
+  "author": "waelfathy865-dev",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
